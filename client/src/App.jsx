@@ -54,7 +54,7 @@ export default function App({ socket }) {
           <p><strong>{new Date(message.date).getHours()}h{new Date(message.date).getMinutes()}</strong></p>
         </div>
     )
-  }).reverse()
+  })
 
   return (
     <div className='app'>
