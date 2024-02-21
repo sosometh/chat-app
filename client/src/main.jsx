@@ -5,7 +5,8 @@ import './index.css'
 
 // ICI
 import {io} from "socket.io-client"
-const socket = io("localhost:3000")
+// ici on choisit l'ip du réseau avec qui on veut se connecter en TCP (en LAN uniquement)
+const socket = io("172.16.6.1:3000")
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
